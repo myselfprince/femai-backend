@@ -1,10 +1,10 @@
-    from fastapi import FastAPI, HTTPException
-    from fastapi.middleware.cors import CORSMiddleware
-    import joblib
-    import numpy as np
-    import os
-    import pandas as pd
-    from pydantic import BaseModel
+from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
+import joblib
+import numpy as np
+import os
+import pandas as pd
+from pydantic import BaseModel
 
 app = FastAPI()
 
@@ -19,7 +19,7 @@ app.add_middleware(
 
 # Load models
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MODELS_DIR = os.path.join(BASE_DIR, 'models')
+MODELS_DIR = os.path.join(BASE_DIR, '')
 try:
     models = joblib.load(os.path.join(MODELS_DIR, 'models.pkl'))
     preprocessor = joblib.load(os.path.join(MODELS_DIR, 'preprocessor.pkl'))
