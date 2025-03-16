@@ -1,6 +1,6 @@
-fastapi
-uvicorn
-joblib
-numpy
-pandas
-pydantic
+fastapi==0.115.11
+uvicorn==0.34.0
+joblib==1.4.2
+numpy==1.26.4
+pandas==2.2.2
+pydantic==2.7.1
